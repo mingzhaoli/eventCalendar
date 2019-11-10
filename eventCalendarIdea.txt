@@ -1,0 +1,9 @@
+Priority Queue Event Calendar
+>user inputs file of events_date_time
+>program inserts and sorts into a Priority Queue
+ date > time
+>allow user to edit events/date/time
+>reprioritize
+>program inserts PQEC into CALENDAR INTERFACE
+>program alarms user (user specified time) in advance
+ of event
