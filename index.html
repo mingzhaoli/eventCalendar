@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Calendar -->
+    <link rel="stylesheet" href="/bower_components/bootstrap-calendar/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/bower_components/bootstrap-calendar/css/calendar.css">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <!-- CSS stylesheet -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap" rel="stylesheet">
+    
+    <title>Event Calendar</title>
+</head>
+<body>
+
+    <!-- Nav Bar -->
+    <div class="row bg-dark">
+        <div class="col-md-1">
+            <h1 class="text-light mt-1">1/4 Sec</h1>
+        </div>
+        <div class="col-md-10">
+            <nav class="nav justify-content-center p-2 m-2">
+                <a href="#">Home</a>
+                <a href="#">Calendar</a>
+                <a href="#">Requests</a>
+                <a href="#">Weather</a>
+            </nav>
+        </div>
+        <div class="col-md-1">
+            <button type="button" class="btn btn-light p-2 m-2">Account</button>
+        </div>
+    </div>
+
+    <!-- Main screen -->
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col">
+                <div class="main d-flex justify-content-center align-items-center ">
+                    <a href="#"><h1 class="text text-light">Where Next?</h1></a>
+                    <a href="#">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-down" viewBox="0 0 16 16">
+                        <path d="M3.204 5h9.592L8 10.481 3.204 5zm-.753.659 4.796 5.48a1 1 0 0 0 1.506 0l4.796-5.48c.566-.647.106-1.659-.753-1.659H3.204a1 1 0 0 0-.753 1.659z"/>
+                      </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Calendar -->
+    <div class="container-fluid" style="height: 100vh;">
+        <div class="row">
+            <div class="col-md-10 border rounded">
+                <h1>Calendar</h1>
+            </div>
+            <div class="col-md-2 border rounded">
+                <h1>Weather</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita eius ratione nulla in molestias eum cum veniam deleniti fugiat accusamus itaque illum ducimus perferendis, maiores quas deserunt velit iusto ipsum.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Event Creation Form -->
+    <div class="container-fluid" style="height: 100vh;">
+        <div class="row">
+
+            <div class="col-md-10 border rounded">
+                <h1>Create Event</h1>
+                <br>
+                <form>
+                    <div class="row">
+                        <div class="col">
+                            <div class="form-group">
+                                <label for="eventName">Event Name</label>
+                                <input type="text" class="form-control" placeholder="Awesome Event 7">
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="form-group">
+                                <label for="eventDestination">Destination</label>
+                                <input type="text" class="form-control" placeholder="Your mom's place">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col">
+                            <div class="form-group">
+                                <label for="eventDate">Date</label>
+                                <input type="date" class="form-control">
+                            </div>
+                        </div>
+                        <div class="col">
+                            
+                            <label for="eventStart">Time</label>
+                            <input type="time" class="form-control" name="startTime" id="startTime">
+                        </div>
+                        <div class="col">
+                            <br>
+                            <input type="time" class="form-control" name="endTime" id="endTIme">
+                        </div>
+                        <div class="col">
+                            <br>
+                            <input type="checkbox" class="form-check" name="allDay" id="allDay"> <label for="allDay">All Day</label>
+                        </div>
+
+                    <div class="row">
+                        <div class="col">
+                            <div class="form-group">
+                                <label for="eventDetails">Details</label>
+                                <textarea class="form-control" name="eventDetails" id="eventDetails" cols="30" rows="6"></textarea>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="form-group">
+                                <label for="eventInvite">Invite</label>
+                                <input type="search" class="form-control" name="friendSearch" id="friendSearch">
+                                <br>
+                                <button type="submit" class="btn btn-primary">Submit</button>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+
+                </form>
+            </div>
+
+            <div class="col-md-2 border rounded">
+                <h1>Friends</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste saepe ab voluptates doloremque architecto quam! Nulla repudiandae corrupti similique? Explicabo error modi ab velit eaque optio assumenda at consequatur aperiam?</p>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Maps/Directions -->
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-10 border rounded">
+                <h1>Directions</h1>
+                <br>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse aliquam officiis nulla earum veniam dolorum ipsa sapiente culpa, praesentium illo id similique minima harum beatae quod eum vero commodi. Inventore.</p>
+            </div>
+
+            <div class="col-md-2 border rounded">
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Exercitationem cum quo pariatur necessitatibus culpa quis nostrum inventore neque itaque tempora doloremque quisquam, ab soluta laboriosam tenetur temporibus ipsa minima non!</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid">
+        <div class="row">
+            <h1>Contact</h1>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eius iusto delectus deserunt unde veritatis quo, obcaecati natus odit molestias nulla at dolorem nemo optio officia rem ipsam architecto, porro neque?</p>
+        </div>
+    </div>
+
+</body>
+</html>

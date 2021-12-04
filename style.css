@@ -1,0 +1,25 @@
+.container-fluid{
+    padding:0;
+}
+
+a{
+    text-decoration: none;
+}
+
+.nav a{
+    margin: 5px;
+}
+
+.nav a:hover{
+    color: white;
+}
+
+.main{
+    /* Background CSS */
+    background-image: url(/assets/cover-background-1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 95vh;
+    width: 100%;
+    filter: saturate(2)
+}
